@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+  <input type="text" name="name" placeholder="enter name" value="{{udata.name}}"><br>
+  <input type="text" name="email" placeholder="enter email" value="{{udata.email}}"><br>
+  <input type="text" name="password" placeholder="enter password" value="{{udata.password}}"><br>
+  <button type="submit">save</button>
+</form>
+</body>
+</html>
